@@ -4,8 +4,7 @@
  * Set of functions to insert data into an XML file with a specific format
  *
  * @author cabrera-dcc (http://cabrera-dcc/github.io)
- * @copyright Copyright (c) 2015, Daniel Cabrera Cebrero
- * @license GNU General Public License (GPLv3 - https://www.gnu.org/copyleft/gpl.html)
+ * @license GNU General Public License (GPLv3 - https://github.com/cabrera-dcc/news/blob/master/LICENSE)
  * @version Beta-1 (rev. 20150423)
 */
 if(!isset($_POST['autor']) || !isset($_POST['texto'])){
