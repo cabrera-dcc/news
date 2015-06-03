@@ -1,2 +1,2 @@
 # news
-A reduced news container
+A reduced news and events container
