@@ -1,132 +1,63 @@
 <?php
 	function show()
 	{
+		$xml = simplexml_load_file('events.xml');
 		$actividades = "";
 
-		$file = fopen("events.xml","r");
-		$line = fgets($file);
-		$line = fgets($file);
+		foreach ($xml as $event) {
+			foreach ($event->activities as $activity) {
+				foreach ($activity as $value) {
+					$actividades .= $value;
+				}
+			}
 
-
-		while(!feof($file)){
-			
-			$etiqueta_evento = fgets($file);
-
-			$etiqueta_actividades = fgets($file);
-			$etiqueta_actividad = fgets($file);
-
-			do{
-				$actividad = fgets($file);
-				$etiqueta_fin_actividad = fgets($file);
-				//$actividad .= ", ";
-				$actividades .= $actividad;
-				$next_line = fgets($file);
-			}while($next_line == "<activity>");
-			echo $next_line;
-
-
-			/*$next_line = fgets($file);
-			while($next_line == "<activity>"){
-				$actividades .= fgets($file);
-				$actividades .= ", ";
-				$etiqueta_fin_actividad = fgets($file);
-				$next_line = fgets($file);
-			}*/
-			
-
-			$etiqueta_coordenadas = fgets($file);
-			$etiqueta_latitud = fgets($file);
-			$latitud = fgets($file);
-			$etiqueta_fin_latitud = fgets($file);
-			$etiqueta_longitud = fgets($file);
-			$longitud = fgets($file);
-			$etiqueta_fin_longitud = fgets($file);
-			$etiqueta_zoom = fgets($file);
-			$zoom = fgets($file);
-			$etiqueta_fin_zoom = fgets($file);
-			$etiqueta_fin_coordenadas = fgets($file);
-
-			$etiqueta_lugar = fgets($file);
-			$lugar = fgets($file);
-			$etiqueta_fin_lugar = fgets($file);
-
-			$etiqueta_direccion = fgets($file);
-			$direccion = fgets($file);
-			$etiqueta_fin_direccion = fgets($file);
-
-			$etiqueta_fecha = fgets($file);
-			$fecha = fgets($file);
-			$etiqueta_fin_fecha = fgets($file);
-
-			$etiqueta_hora = fgets($file);
-			$hora = fgets($file);
-			$etiqueta_fin_hora = fgets($file);
-
-			$etiqueta_responsable = fgets($file);
-			$etiqueta_nombre = fgets($file);
-			$nombre = fgets($file);
-			$etiqueta_fin_nombre = fgets($file);
-			$etiqueta_telefono = fgets($file);
-			$telefono = fgets($file);
-			$etiqueta_fin_telefono = fgets($file);
-			$etiqueta_fin_responsable = fgets($file);
-
-			$etiqueta_url = fgets($file);
-			$url = fgets($file);
-			$etiqueta_fin_url = fgets($file);
-
-			$etiqueta_fin_evento = fgets($file);
-
+			$latitud = $event->coordinates->latitude;
+			$longitud = $event->coordinates->longitude;
+			$zoom = $event->coordinates->zoom;
+			$nombre = $event->responsible->name;
+			$telefono = $event->responsible->phone;
+			$fecha = $event->date;
+			$hora = $event->time;
+			$lugar = $event->place;
+			$direccion = $event->address;
+			$url = $event->streamingURL;
 
 			echo "<tr>";
-
 			echo "<td>";
 			echo $actividades;
 			echo "</td>";
-
 			echo "<td>";
 			echo $fecha;
 			echo "</td>";
-
 			echo "<td>";	
 			echo $hora;
 			echo "</td>";
-
 			echo "<td>";		
 			echo $latitud;
 			echo "</td>";
-
 			echo "<td>";		
 			echo $longitud;
 			echo "</td>";
-
 			echo "<td>";		
 			echo $zoom;
 			echo "</td>";
-
 			echo "<td>";		
 			echo $lugar;
 			echo "</td>";
-
 			echo "<td>";		
 			echo $direccion;
 			echo "</td>";
-
 			echo "<td>";		
 			echo $nombre;
 			echo "</td>";
-
 			echo "<td>";		
 			echo $telefono;
 			echo "</td>";
-
 			echo "<td>";		
 			echo $url;
 			echo "</td>";
-
 			echo "</tr>";
 
-			$actividad = "";
 			$actividades = "";
 		}
 	}
@@ -149,8 +80,8 @@
 <body>
 	<nav class="navbar navbar-inverse navbar-static-top small text-uppercase">
 		<div class="container-fluid">
-			<a class="navbar-brand" rel="alternate" hreflang="en" type="text/html" href="index.php"><strong>NEWS</strong></a>
-			<a class="navbar-brand" rel="alternate" hreflang="en" type="text/html" href="index_events.php"><strong>EVENTS</strong></a>
+			<a class="navbar-brand" rel="alternate" hreflang="en" type="text/html" href="../index.php"><strong>NEWS</strong></a>
+			<a class="navbar-brand" rel="alternate" hreflang="en" type="text/html" href="../index_events.php"><strong>EVENTS</strong></a>
 		</div>
 	</nav>
 

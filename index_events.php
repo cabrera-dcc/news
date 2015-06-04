@@ -53,7 +53,7 @@
 				    	<label for="inputLatitude" class="control-label text-uppercase">Latitud</label>
 				    	<div id="latitude" class="input-group">
 				    		<span class="input-group-addon"><span class="glyphicon glyphicon-map-marker"></span></span>
-				      		<input name="latitude" type="text" class="form-control input-sm" id="inputLatitude" maxlength="5" placeholder="Latitud" value="" />
+				      		<input name="latitude" type="text" class="form-control input-sm" id="inputLatitude" maxlength="100" placeholder="Latitud" value="" />
 				      	</div>
 				  	</div>
 
@@ -61,7 +61,7 @@
 				    	<label for="inputLongitude" class="control-label text-uppercase">Longitud</label>
 				    	<div id="longitude" class="input-group">
 				    		<span class="input-group-addon"><span class="glyphicon glyphicon-map-marker"></span></span>
-				      		<input name="longitude" type="text" class="form-control input-sm" id="inputLongitude" maxlength="5" placeholder="Longitud" value="" />
+				      		<input name="longitude" type="text" class="form-control input-sm" id="inputLongitude" maxlength="100" placeholder="Longitud" value="" />
 				      	</div>
 				  	</div>
 
@@ -69,7 +69,7 @@
 				    	<label for="inputZoom" class="control-label text-uppercase">Zoom</label>
 				    	<div id="zoom" class="input-group">
 				    		<span class="input-group-addon"><span class="glyphicon glyphicon-map-marker"></span></span>
-				      		<input name="zoom" type="text" class="form-control input-sm" id="inputZoom" maxlength="5" placeholder="Zoom" value="" />
+				      		<input name="zoom" type="text" class="form-control input-sm" id="inputZoom" maxlength="100" placeholder="Zoom" value="" />
 				      	</div>
 				  	</div>
 
@@ -77,7 +77,7 @@
 				    	<label for="inputPlace" class="control-label text-uppercase">Lugar</label>
 				    	<div id="place" class="input-group">
 				    		<span class="input-group-addon"><span class="glyphicon glyphicon-home"></span></span>
-				      		<input name="place" type="text" class="form-control input-sm" id="inputPlace" maxlength="5" placeholder="Lugar" value="" />
+				      		<input name="place" type="text" class="form-control input-sm" id="inputPlace" maxlength="100" placeholder="Lugar" value="" />
 				      	</div>
 				  	</div>
 
@@ -85,7 +85,7 @@
 				    	<label for="inputAddress" class="control-label text-uppercase">Dirección</label>
 				    	<div id="address" class="input-group">
 				    		<span class="input-group-addon"><span class="glyphicon glyphicon-home"></span></span>
-				      		<input name="address" type="text" class="form-control input-sm" id="inputAddress" maxlength="5" placeholder="Dirección" value="" />
+				      		<input name="address" type="text" class="form-control input-sm" id="inputAddress" maxlength="255" placeholder="Dirección" value="" />
 				      	</div>
 				  	</div>
 
@@ -93,15 +93,15 @@
 				    	<label for="inputName" class="control-label text-uppercase">Nombre del responsable</label>
 				    	<div id="name" class="input-group">
 				    		<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-				      		<input name="contact" type="text" class="form-control input-sm" id="inputName" maxlength="5" placeholder="Nombre" value="" />
+				      		<input name="contact" type="text" class="form-control input-sm" id="inputName" maxlength="100" placeholder="Nombre" value="" />
 				      	</div>
 				  	</div>
-
+				  	
 				  	<div class="form-group col-md-6">
 				    	<label for="inputPhone" class="control-label text-uppercase">Teléfono de contacto</label>
 				    	<div id="phone" class="input-group">
 				    		<span class="input-group-addon"><span class="glyphicon glyphicon-phone-alt"></span></span>
-				      		<input name="phone" type="text" class="form-control input-sm" id="inputPhone" maxlength="5" placeholder="Teléfono" value="" />
+				      		<input name="phone" type="text" class="form-control input-sm" id="inputPhone" maxlength="12" placeholder="Teléfono" value="" />
 				      	</div>
 				  	</div>
 
@@ -109,7 +109,7 @@
 				    	<label for="inputURL" class="control-label text-uppercase">URL</label>
 				    	<div id="url" class="input-group">
 				    		<span class="input-group-addon"><span class="glyphicon glyphicon-link"></span></span>
-				      		<input name="url" type="text" class="form-control input-sm" id="inputURL" maxlength="5" placeholder="URL" value="" />
+				      		<input name="url" type="text" class="form-control input-sm" id="inputURL" maxlength="255" placeholder="URL" value="" />
 				      	</div>
 				  	</div>
 					
