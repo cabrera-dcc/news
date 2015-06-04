@@ -70,7 +70,7 @@
 	<meta name="application-name" content="Noticias y Eventos"/>
 	<meta name="description" content="Contenedor de noticias y eventos"/>
 	<meta name="author" content="Daniel Cabrera Cebrero (http://cabrera-dcc.github.io)"/>
-	<meta name="version" content="Beta-1 (rev. 20150603)"/>
+	<meta name="version" content="Beta-1 (rev. 20150604)"/>
 	<meta name="keywords" content="news, events, container, opensource"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title></title>
