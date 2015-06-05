@@ -70,7 +70,7 @@
 	<meta name="application-name" content="Noticias y Eventos"/>
 	<meta name="description" content="Contenedor de noticias y eventos"/>
 	<meta name="author" content="Daniel Cabrera Cebrero (http://cabrera-dcc.github.io)"/>
-	<meta name="version" content="Beta-1 (rev. 20150604)"/>
+	<meta name="version" content="Beta-1 (rev. 20150605)"/>
 	<meta name="keywords" content="news, events, container, opensource"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title></title>
@@ -88,22 +88,24 @@
 	<main class="container">
 		<h1>EVENTOS</h1>
 		<section id="form-section" class="col-sm-12">
-			<table class="table table-striped">
-				<tr>
-					<th>Actividades</th>
-					<th>Fecha</th>
-					<th>Hora</th>
-					<th>Latitud</th>
-					<th>Longitud</th>
-					<th>Zoom</th>
-					<th>Lugar</th>
-					<th>Dirección</th>
-					<th>Responsable</th>
-					<th>Teléfono</th>
-					<th>URL</th>
-				</tr>
-				<?php show(); ?>
+			<div class="table-responsive">
+				<table class="table table-striped table-hover table-condensed">
+					<tr>
+						<th>Actividades</th>
+						<th>Fecha</th>
+						<th>Hora</th>
+						<th>Latitud</th>
+						<th>Longitud</th>
+						<th>Zoom</th>
+						<th>Lugar</th>
+						<th>Dirección</th>
+						<th>Responsable</th>
+						<th>Teléfono</th>
+						<th>URL</th>
+					</tr>
+					<?php show(); ?>
 			</table>
+			</div>
 			<div class="container-fluid text-right" style="margin-bottom:10px;"><a class="btn btn-info" role="button" href="../index_events.php">Volver</a></div>
 		</section>
 	</main>

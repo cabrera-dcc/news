@@ -51,7 +51,7 @@
 	<meta name="application-name" content="Noticias y Eventos"/>
 	<meta name="description" content="Contenedor de noticias y eventos"/>
 	<meta name="author" content="Daniel Cabrera Cebrero (http://cabrera-dcc.github.io)"/>
-	<meta name="version" content="Beta-1 (rev. 20150423)"/>
+	<meta name="version" content="Beta-1 (rev. 20150605)"/>
 	<meta name="keywords" content="news, events, container, opensource"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title></title>
@@ -69,15 +69,17 @@
 	<main class="container">
 		<h1>NOTICIAS</h1>
 		<section id="form-section" class="col-sm-12">
-			<table class="table table-striped">
-				<tr>
-					<th>Autor</th>
-					<th>Fecha</th>
-					<th>Hora</th>
-					<th>Texto</th>
-				</tr>
-				<?php show(); ?>
-			</table>
+			<div class="table-responsive">
+				<table class="table table-striped table-hover table-condensed">
+					<tr>
+						<th>Autor</th>
+						<th>Fecha</th>
+						<th>Hora</th>
+						<th>Texto</th>
+					</tr>
+					<?php show(); ?>
+				</table>
+			</div>
 			<div class="container-fluid text-right" style="margin-bottom:10px;"><a class="btn btn-info" role="button" href="../index.php">Volver</a></div>
 		</section>
 	</main>
