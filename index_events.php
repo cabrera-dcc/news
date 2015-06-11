@@ -5,7 +5,7 @@
 	<meta name="application-name" content="Noticias y Eventos"/>
 	<meta name="description" content="Contenedor de noticias y eventos"/>
 	<meta name="author" content="Daniel Cabrera Cebrero (http://cabrera-dcc.github.io)"/>
-	<meta name="version" content="Beta-1 (rev. 20150609)"/>
+	<meta name="version" content="Beta-1 (rev. 20150611)"/>
 	<meta name="keywords" content="news, events, container, opensource"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title></title>
@@ -105,11 +105,19 @@
 				      	</div>
 				  	</div>
 
-				  	<div class="form-group col-md-12">
+				  	<div class="form-group col-md-6">
 				    	<label for="inputURL" class="control-label text-uppercase">URL</label>
 				    	<div id="url" class="input-group">
 				    		<span class="input-group-addon"><span class="glyphicon glyphicon-link"></span></span>
 				      		<input name="url" type="text" class="form-control input-sm" id="inputURL" maxlength="255" placeholder="URL" value="" />
+				      	</div>
+				  	</div>
+
+				  	<div class="form-group col-md-6">
+				    	<label for="inputURL" class="control-label text-uppercase">Valorar</label>
+				    	<div id="valorar" class="input-group">
+				    		<span class="input-group-addon"><span class="glyphicon glyphicon-star-empty"></span></span>
+				      		<input name="valorar" type="text" class="form-control input-sm" id="inputValorar" maxlength="1" placeholder="S/N" value="" />
 				      	</div>
 				  	</div>
 					

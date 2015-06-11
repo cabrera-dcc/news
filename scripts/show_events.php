@@ -21,6 +21,7 @@
 			$lugar = $event->place;
 			$direccion = $event->address;
 			$url = $event->streamingURL;
+			$valorar = $event->vota;
 
 			echo "<tr>";
 			echo "<td>";
@@ -55,6 +56,9 @@
 			echo "</td>";
 			echo "<td>";		
 			echo $url;
+			echo "</td>";
+			echo "<td>";		
+			echo $valorar;
 			echo "</td>";
 			echo "</tr>";
 
@@ -102,6 +106,7 @@
 						<th>Responsable</th>
 						<th>Teléfono</th>
 						<th>URL</th>
+						<th>Vota</th>
 					</tr>
 					<?php show(); ?>
 			</table>

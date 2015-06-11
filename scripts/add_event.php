@@ -113,6 +113,18 @@ else{
 	fputs($f_new,"\n\t\t");
 	fputs($f_new,"</streamingURL>");
 
+	fputs($f_new,"\n\t\t");
+	fputs($f_new,"<vota>");
+	fputs($f_new,"\n\t\t\t");
+	if($_POST['valorar'] == 's' || $_POST['S']){
+		fputs($f_new,'true');
+	}
+	else{
+		fputs($f_new,'false');
+	}
+	fputs($f_new,"\n\t\t");
+	fputs($f_new,"</vota>");
+
 
 	fputs($f_new,"\n\t");
 	fputs($f_new,"</event>");
