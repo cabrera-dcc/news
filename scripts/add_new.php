@@ -3,9 +3,9 @@
 /**
  * Set of functions to insert data into an XML file with a specific format
  *
- * @author cabrera-dcc (http://cabrera-dcc/github.io)
+ * @author cabrera-dcc (http://cabrera-dcc.github.io)
  * @license GNU General Public License (GPLv3 - https://github.com/cabrera-dcc/news/blob/master/LICENSE)
- * @version Beta-1 (rev. 20150423)
+ * @version Beta-1 (rev. 20150612)
 */
 if(!isset($_POST['autor']) || !isset($_POST['texto'])){
 	header("Location: ../index.php?r=Error");
