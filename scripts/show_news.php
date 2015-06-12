@@ -51,18 +51,18 @@
 	<meta name="application-name" content="Noticias y Eventos"/>
 	<meta name="description" content="Contenedor de noticias y eventos"/>
 	<meta name="author" content="Daniel Cabrera Cebrero (http://cabrera-dcc.github.io)"/>
-	<meta name="version" content="Beta-1 (rev. 20150605)"/>
+	<meta name="version" content="Beta-1 (rev. 20150612)"/>
 	<meta name="keywords" content="news, events, container, opensource"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<title></title>
+	<title>NEWS</title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css"/>
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-static-top small text-uppercase">
 		<div class="container-fluid">
-			<a class="navbar-brand" rel="alternate" hreflang="en" type="text/html" href="index.php"><strong>NEWS</strong></a>
-			<a class="navbar-brand" rel="alternate" hreflang="en" type="text/html" href="index_events.php"><strong>EVENTS</strong></a>
+			<a class="navbar-brand" rel="alternate" hreflang="en" type="text/html" href="../index.php"><strong>NEWS</strong></a>
+			<a class="navbar-brand" rel="alternate" hreflang="en" type="text/html" href="../index_events.php"><strong>EVENTS</strong></a>
 		</div>
 	</nav>
 
