@@ -21,112 +21,111 @@ else{
 	$line = fgets($f_old);
 	fputs($f_new,$line);
 
-	fputs($f_new,"\t");
 	fputs($f_new,"<event>");
-	fputs($f_new,"\n\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"<activities>");
 
 	foreach ($_POST['activities'] as $activity) {
-		fputs($f_new,"\n\t\t\t");
+		fputs($f_new,"\n");
 		fputs($f_new,"<activity>");
-		fputs($f_new,"\n\t\t\t\t");
+		fputs($f_new,"\n");
 		fputs($f_new,$activity);
-		fputs($f_new,"\n\t\t\t");
+		fputs($f_new,"\n");
 		fputs($f_new,"</activity>");
 	}
 
-	fputs($f_new,"\n\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"</activities>");
 
-	fputs($f_new,"\n\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"<coordinates>");
-	fputs($f_new,"\n\t\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"<latitude>");
-	fputs($f_new,"\n\t\t\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,$_POST['latitude']);
-	fputs($f_new,"\n\t\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"</latitude>");
-	fputs($f_new,"\n\t\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"<longitude>");
-	fputs($f_new,"\n\t\t\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,$_POST['longitude']);
-	fputs($f_new,"\n\t\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"</longitude>");
-	fputs($f_new,"\n\t\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"<zoom>");
-	fputs($f_new,"\n\t\t\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,$_POST['zoom']);
-	fputs($f_new,"\n\t\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"</zoom>");
-	fputs($f_new,"\n\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"</coordinates>");
 
-	fputs($f_new,"\n\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"<place>");
-	fputs($f_new,"\n\t\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,$_POST['place']);
-	fputs($f_new,"\n\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"</place>");
 
-	fputs($f_new,"\n\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"<address>");
-	fputs($f_new,"\n\t\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,$_POST['address']);
-	fputs($f_new,"\n\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"</address>");
 
-	fputs($f_new,"\n\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"<date>");
-	fputs($f_new,"\n\t\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,$_POST['date']);
-	fputs($f_new,"\n\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"</date>");
 
-	fputs($f_new,"\n\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"<time>");
-	fputs($f_new,"\n\t\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,$_POST['time']);
-	fputs($f_new,"\n\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"</time>");
 
-	fputs($f_new,"\n\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"<responsible>");
-	fputs($f_new,"\n\t\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"<name>");
-	fputs($f_new,"\n\t\t\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,$_POST['contact']);
-	fputs($f_new,"\n\t\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"</name>");
-	fputs($f_new,"\n\t\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"<phone>");
-	fputs($f_new,"\n\t\t\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,$_POST['phone']);
-	fputs($f_new,"\n\t\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"</phone>");
-	fputs($f_new,"\n\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"</responsible>");
 
-	fputs($f_new,"\n\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"<streamingURL>");
-	fputs($f_new,"\n\t\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,$_POST['url']);
-	fputs($f_new,"\n\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"</streamingURL>");
 
-	fputs($f_new,"\n\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"<vota>");
-	fputs($f_new,"\n\t\t\t");
+	fputs($f_new,"\n");
 	if($_POST['valorar'] == 's' || $_POST['valorar'] == "S"){
 		fputs($f_new,'true');
 	}
 	else{
 		fputs($f_new,'false');
 	}
-	fputs($f_new,"\n\t\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"</vota>");
 
 
-	fputs($f_new,"\n\t");
+	fputs($f_new,"\n");
 	fputs($f_new,"</event>");
 	fputs($f_new,"\n");
 
