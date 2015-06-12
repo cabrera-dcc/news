@@ -116,7 +116,7 @@ else{
 	fputs($f_new,"\n\t\t");
 	fputs($f_new,"<vota>");
 	fputs($f_new,"\n\t\t\t");
-	if($_POST['valorar'] == 's' || $_POST['S']){
+	if($_POST['valorar'] == 's' || $_POST['valorar'] == "S"){
 		fputs($f_new,'true');
 	}
 	else{
