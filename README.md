@@ -1,7 +1,7 @@
 news
 ====
 
-Basic storage system for news and events with with [Bootstrap][1], [jQuery][2] and [PHP][3]
+Basic storage system for news and events with [Bootstrap][1], [jQuery][2] and [PHP][3]
 
 [beta1.20150504.f453755]
 
